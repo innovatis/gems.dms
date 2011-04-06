@@ -1,0 +1,3 @@
+[submodule "lib/rubycas-server"]
+	path = lib/rubycas-server
+	url = git@github.com:innovatis/rubycas-server.git
