@@ -1,3 +1,5 @@
+require 'json'
+
 module DMS
   def self.location
     "http://dms.innovatisinc.ca"
@@ -13,7 +15,7 @@ module DMS
         :secret      => secret,
         :expires_in  => expires_in})
 
-    response
+    JSON.parse(response)
   end
 
   def self.access_url(path, expires_in = 1.hour)
