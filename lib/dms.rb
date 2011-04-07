@@ -7,7 +7,7 @@ module DMS
     app_id = Rails.application.config.inno_app_id
     secret = Rails.application.config.inno_app_secret
 
-    repsonse = RestClient.post("#{location}/keys", {
+    response = RestClient.post("#{location}/keys", {
         :paths       => paths, 
         :inno_app_id => app_id,
         :secret      => secret,
