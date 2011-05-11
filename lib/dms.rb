@@ -13,7 +13,7 @@ module DMS
   def self.url_for_private(path, expires_in = 1.hour)
     RestClient.post("#{location}/keys", {
         :path => path,
-        :secret => DMS.secret,
+        :secret => Rails.application.config.dms_secret,
         :expires_in => expires_in})
   end
 
