@@ -1,7 +1,0 @@
-- urls = DMS.access_urls(photoset.map(&:asset_path))
-
-- g = "group_#{rand 100000}"
-.slider
-  - photoset.zip(urls).each do |p, access_url|
-    %a{:rel => g, :href=> access_url}
-      %img{:src=>access_url}
