@@ -1,6 +1,9 @@
 require 'json'
 
 module DMS
+
+  class Engine < ::Rails::Engine
+  end
   
   def self.location
     if Rails.env.development?
