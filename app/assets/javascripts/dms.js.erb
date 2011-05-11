@@ -1,3 +1,6 @@
+MustacheTemplates = MustacheTemplates || {};
+MustacheTemplates['DmsFileAsset'] = "<li class=\"asset\">\n  <div class=\"remove_asset\"><\/div>\n  <input class=\"destroy\" name=\"{{scope}}[_destroy]\" type=\"hidden\" value=\"false\" />\n  <input name=\"{{scope}}[asset_path]\" type=\"hidden\" value=\"{{assetPath}}\" />\n  <input name=\"{{scope}}[id]\" type=\"hidden\" value=\"{{persistedId}}\" />\n  <span><a href=\'{{assetPath}}\'>{{assetPathDisplay}}<\/a><\/span>\n<\/li>\n";
+
 DMS = {
   location: "<%= Dms.location %>",
 
