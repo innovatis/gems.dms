@@ -1,6 +1,6 @@
 require 'json'
 
-module DMS
+module Dms
 
   class Engine < ::Rails::Engine
   end
