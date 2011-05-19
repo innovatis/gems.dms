@@ -1,0 +1,28 @@
+.asset_list {
+  margin: 0; }
+  .asset_list .asset {
+    width: 400px;
+    height: 1.5em;
+    list-style-type: none;
+    color: black;
+    font: 11px Verdana, Geneva, sans-serif;
+    line-height: 1.5em;
+    padding: 8px;
+    margin: 4px;
+    position: relative;
+    background: #e5e5e5; }
+    .asset_list .asset .remove_asset {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+      background: url(/images/cancel.png) right center no-repeat; }
+
+.upload-wrapper {
+  position: relative; }
+  .upload-wrapper .loading {
+    position: absolute;
+    left: 0;
+    top: 0; }
